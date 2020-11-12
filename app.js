@@ -11,7 +11,7 @@ const section = document.querySelector('section');
 
 function populateHeader() {
     const myH1 = document.createElement('h1');
-    myH1.textContent = "Stellaris Builder";
+    myH1.textContent = "Stellaris Empire Builder";
     header.appendChild(myH1);
 }
 /*
@@ -71,7 +71,7 @@ function changeName(name){
 
 
 function showCat(obj, num) {
-
+    //console.log(obj);
     let center = 'text-align: center';
     const myH2 = document.createElement('h2');
     const myArticle = document.createElement('article');
@@ -136,7 +136,8 @@ function showCat(obj, num) {
         const label = document.createElement("label");
         const span = document.createElement("span");
         let pair = Object.keys(obj)[i];
-        let temp;
+        let temp = key[i];
+        /*
         switch (Object.keys(jsonF)[num]) {
             case 'ethics':
                 temp = key[i].replace("ethic_", "");
@@ -158,6 +159,8 @@ function showCat(obj, num) {
                 break;
             default: temp = key[i];
         }
+
+         */
         /*
                 if (Object.keys(jsonF)[num] == 'ethics'){
                     temp = key[i].replace("ethic_", "");

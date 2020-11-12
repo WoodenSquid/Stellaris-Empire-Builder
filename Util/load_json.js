@@ -110,18 +110,21 @@ for(let a = 0; a < 3; a++) {
 
 combinedRequest.init([jsonF.species.url, jsonF.archetype.url, jsonF.governments.url, jsonF.ethics.url, jsonF.authority.url, jsonF.civics.url], function(data){
     populateHeader();
-    let me = combinedArticles.init(data[0]);
-    let me2 = combinedArticles.init(data[3]);
-    let m3 = combinedArticles.init(data[4]);
+    const copy = Object.assign({}, combinedArticles.init(data[5]));
+    console.log(copy)
+    combinedArticles.init(data[0]);
+    combinedArticles.init(data[3]);
+    combinedArticles.init(data[4]);
+    //combinedArticles.init(data[5]);
     //showCategories(data[4]);
     showCat(data[0], 0);
     //showCat(data[3], 3);
     showCat(data[4], 4);
-    showCat(data[5], 5);
+    showCat(copy, 5);
     //testEth(data[3], 3);
-    console.log("test");
-    console.log(me);
-    console.log(me2);
+    //console.log("test");
+    //console.log(me);
+    //console.log(me2);
 
 });
 
@@ -154,8 +157,8 @@ function getJson(file){
 
 function saveJson(obj) {
     const obj3 = JSON.parse(JSON.stringify(obj));
-    console.log("test1");
-    console.log(obj);
+    //console.log("test1");
+    //console.log(obj);
     return obj3;
 }
 //console.log("test2");
