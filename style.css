@@ -1,0 +1,141 @@
+/* || general styles */
+
+html {
+    font-family: 'helvetica neue', helvetica, arial, sans-serif;
+}
+
+body {
+    width: 800px;
+    margin: 0 auto;
+}
+
+h1, h2 {
+    font-family: 'Faster One', cursive;
+}
+
+/* header styles */
+
+h1 {
+    font-size: 4rem;
+    text-align: center;
+}
+h3{
+    font-family: 'Orbitron', sans-serif;
+
+}
+
+header p {
+    font-size: 1.3rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* section styles */
+
+section article {
+    width: 33%;
+    float: left;
+    //column-count: 4;
+}
+
+section p {
+    margin: 5px 0;
+}
+
+section ul {
+    margin-top: 0;
+}
+
+h2 {
+    font-size: 2.5rem;
+    letter-spacing: -5px;
+    margin-bottom: 10px;
+}
+
+input[type="checkbox"] {
+    width: 24px;
+    height: 24px;
+    vertical-align: bottom;
+    margin-right:10px;
+}
+
+.circle {
+    position: relative;
+    display: inline-block;
+    /*width:2em;
+    height:2em;
+    border-radius:50%;*/
+    /*background-color:orange;*/
+}
+.circle-container {
+    position: relative;
+    width: 12em;
+    height: 24em;
+    padding: 2.8em;
+    /*= 2em * 1.4 (2em = half the width of an img, 1.4 = sqrt(2))*/
+    /*border: dashed 1px;*/
+    /*border-radius: 50%;*/
+    margin: 1.75em auto 0;
+}
+.circle-container div {
+    display: block;
+    /*overflow: hidden;*/
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 4em;
+    height: 4em;
+    margin: -2em;
+    /* 2em = 4em/2 */
+    /* half the width */
+}
+.circle .tooltiptext {
+    visibility: hidden;
+    /*width: 120px;*/
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    width: max-content;
+    max-width: 400px;
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+    /* Fade in tooltip - takes 1 second to go from 0% to 100% opac: */
+    opacity: 0;
+    transition: opacity 1s;
+}
+
+.circle:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+    white-space: pre-wrap;
+}
+
+
+
+/*
+.circle .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 100%;
+    left: 50%;
+    margin-left: -60px;
+*/
+    /* Fade in tooltip - takes 1 second to go from 0% to 100% opac: *//*
+    opacity: 0;
+    transition: opacity 1s;
+}*/
+/*
+.circle :hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+}*/

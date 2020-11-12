@@ -1,0 +1,925 @@
+{
+  "HUM": {
+    "archetype": "BIOLOGICAL",
+    "possible": {
+      "authority": {
+        "NOT": {
+          "value": "auth_machine_intelligence",
+          "text": "SPECIES_CLASS_MUST_NOT_USE_MACHINE_INTELLIGENCE"
+        }
+      }
+    },
+    "portraits": [
+      "human",
+      "humanoid_02",
+      "humanoid_03",
+      "humanoid_04",
+      "humanoid_05"
+    ],
+    "custom_portraits": {
+      "randomized": {
+        "host_has_dlc": "HumanoidsSpeciesPack"
+      },
+      "playable": {
+        "local_has_dlc": "HumanoidsSpeciesPack"
+      },
+      "portraits": [
+        "humanoid_hp_01",
+        "humanoid_hp_02",
+        "humanoid_hp_06",
+        "humanoid_hp_07",
+        "humanoid_hp_08",
+        "humanoid_hp_09",
+        "humanoid_hp_10",
+        "humanoid_hp_11",
+        "humanoid_hp_12",
+        "humanoid_hp_13"
+      ]
+    },
+    "non_randomized_portraits": [
+      "human"
+    ],
+    "graphical_culture": "humanoid_01",
+    "move_pop_sound_effect": "moving_pop_confirmation"
+  },
+  "PRE_MAM": {
+    "archetype": "PRESAPIENT",
+    "playable": {
+      "always": false
+    },
+    "randomized": false,
+    "portraits": [
+      "pre_mam6",
+      "pre_mam13"
+    ],
+    "graphical_culture": "mammalian_01",
+    "move_pop_sound_effect": "moving_pop_confirmation",
+    "uplifted_into": "MAM",
+    "uplifted_portraits": [
+      "mam6",
+      "mam13"
+    ]
+  },
+  "PRE_REP": {
+    "archetype": "PRESAPIENT",
+    "playable": {
+      "always": false
+    },
+    "randomized": false,
+    "portraits": [
+      "pre_rep09",
+      "pre_rep12"
+    ],
+    "graphical_culture": "reptilian_01",
+    "move_pop_sound_effect": "reptilian_pops_move",
+    "uplifted_into": "REP",
+    "uplifted_portraits": [
+      "rep9",
+      "rep12"
+    ]
+  },
+  "PRE_AVI": {
+    "archetype": "PRESAPIENT",
+    "playable": {
+      "always": false
+    },
+    "randomized": false,
+    "portraits": [
+      "pre_avi1",
+      "pre_avi12"
+    ],
+    "graphical_culture": "avian_01",
+    "move_pop_sound_effect": "avian_pops_move",
+    "uplifted_into": "AVI",
+    "uplifted_portraits": [
+      "avi1",
+      "avi12"
+    ]
+  },
+  "PRE_ART": {
+    "archetype": "PRESAPIENT",
+    "playable": {
+      "always": false
+    },
+    "randomized": false,
+    "portraits": [
+      "pre_art1",
+      "pre_art11",
+      "pre_art12",
+      "pre_art13",
+      "pre_art14",
+      "pre_art15"
+    ],
+    "graphical_culture": "arthropoid_01",
+    "move_pop_sound_effect": "arthopoid_pops_move",
+    "uplifted_into": "ART",
+    "uplifted_portraits": [
+      "art1",
+      "art11",
+      "art12",
+      "art13",
+      "art14",
+      "art15"
+    ]
+  },
+  "PRE_MOL": {
+    "archetype": "PRESAPIENT",
+    "playable": {
+      "always": false
+    },
+    "randomized": false,
+    "portraits": [
+      "pre_mol1",
+      "pre_mol3"
+    ],
+    "graphical_culture": "molluscoid_01",
+    "move_pop_sound_effect": "molluscoid_pops_move",
+    "uplifted_into": "MOL",
+    "uplifted_portraits": [
+      "mol1",
+      "mol3"
+    ]
+  },
+  "PRE_FUN": {
+    "archetype": "PRESAPIENT",
+    "playable": {
+      "always": false
+    },
+    "randomized": false,
+    "gender": false,
+    "portraits": [
+      "pre_fun9",
+      "pre_fun13"
+    ],
+    "graphical_culture": "fungoid_01",
+    "move_pop_sound_effect": "fungoid_pops_move",
+    "uplifted_into": "FUN",
+    "uplifted_portraits": [
+      "fun9",
+      "fun13"
+    ]
+  },
+  "AI": {
+    "playable": {
+      "always": false
+    },
+    "randomized": false,
+    "gender": false,
+    "portraits": [
+      "hum_robot_red"
+    ],
+    "graphical_culture": "ai_01",
+    "move_pop_sound_effect": "moving_pop_confirmation",
+    "resources": []
+  },
+  "SWARM": {
+    "archetype": "OTHER",
+    "playable": {
+      "always": false
+    },
+    "randomized": false,
+    "gender": false,
+    "portraits": [
+      "swarm"
+    ],
+    "graphical_culture": "swarm_01",
+    "move_pop_sound_effect": "moving_pop_confirmation"
+  },
+  "EXD": {
+    "archetype": "OTHER",
+    "playable": {
+      "always": false
+    },
+    "randomized": false,
+    "gender": false,
+    "portraits": [
+      "exd1",
+      "exd2",
+      "exd3"
+    ],
+    "graphical_culture": "extra_dimensional_01",
+    "move_pop_sound_effect": "moving_pop_confirmation"
+  },
+  "ROBOT": {
+    "archetype": "ROBOT",
+    "playable": {
+      "has_global_flag": "game_started"
+    },
+    "randomized": false,
+    "robotic": true,
+    "gender": false,
+    "use_climate_preference": false,
+    "portrait_modding": true,
+    "leader_age_min": 2,
+    "leader_age_max": 10,
+    "custom_portraits": [
+      {
+        "randomized": {
+          "host_has_dlc": "SyntheticDawnStoryPack"
+        },
+        "playable": {
+          "host_has_dlc": "SyntheticDawnStoryPack"
+        },
+        "portraits": [
+          "sd_hum_robot",
+          "sd_mam_robot",
+          "sd_rep_robot",
+          "sd_avi_robot",
+          "sd_art_robot",
+          "sd_mol_robot",
+          "sd_fun_robot",
+          "sd_pla_robot"
+        ]
+      },
+      {
+        "randomized": {
+          "has_lithoids": true
+        },
+        "playable": {
+          "has_lithoids": true
+        },
+        "portraits": [
+          "lith_machine"
+        ]
+      },
+      {
+        "randomized": {
+          "has_necroids": true
+        },
+        "playable": {
+          "has_necroids": true
+        },
+        "portraits": [
+          "nec_machine"
+        ]
+      },
+      {
+        "randomized": {
+          "always": true
+        },
+        "playable": {
+          "always": true
+        },
+        "portraits": [
+          "default_robot"
+        ]
+      }
+    ],
+    "graphical_culture": "ai_01",
+    "move_pop_sound_effect": "robot_pops_move",
+    "resources": []
+  },
+  "MACHINE": {
+    "archetype": "MACHINE",
+    "playable": {
+      "host_has_dlc": "SyntheticDawnStoryPack"
+    },
+    "randomized": {
+      "host_has_dlc": "SyntheticDawnStoryPack",
+      "NOT": {
+        "has_global_flag": "game_started"
+      }
+    },
+    "possible": {
+      "authority": {
+        "OR": {
+          "value": "auth_machine_intelligence",
+          "text": "SPECIES_CLASS_MUST_USE_MACHINE_INTELLIGENCE"
+        }
+      }
+    },
+    "possible_secondary": {
+      "always": false,
+      "text": "SECONDARY_SPECIES_CLASS_INVALID"
+    },
+    "robotic": true,
+    "gender": false,
+    "use_climate_preference": false,
+    "portrait_modding": true,
+    "leader_age_min": 2,
+    "leader_age_max": 10,
+    "custom_portraits": [
+      {
+        "randomized": {
+          "host_has_dlc": "SyntheticDawnStoryPack",
+          "NOT": {
+            "has_global_flag": "game_started"
+          }
+        },
+        "playable": {
+          "host_has_dlc": "SyntheticDawnStoryPack"
+        },
+        "portraits": [
+          "sd_hum_robot",
+          "sd_mam_robot",
+          "sd_rep_robot",
+          "sd_avi_robot",
+          "sd_art_robot",
+          "sd_mol_robot",
+          "sd_fun_robot",
+          "sd_pla_robot"
+        ]
+      },
+      {
+        "randomized": {
+          "AND": {
+            "host_has_dlc": "SyntheticDawnStoryPack",
+            "has_lithoids": true
+          }
+        },
+        "playable": {
+          "AND": {
+            "host_has_dlc": "SyntheticDawnStoryPack",
+            "has_lithoids": true
+          }
+        },
+        "portraits": [
+          "lith_machine"
+        ]
+      },
+      {
+        "randomized": {
+          "AND": {
+            "host_has_dlc": "SyntheticDawnStoryPack",
+            "has_necroids": true
+          }
+        },
+        "playable": {
+          "AND": {
+            "host_has_dlc": "SyntheticDawnStoryPack",
+            "has_necroids": true
+          }
+        },
+        "portraits": [
+          "nec_machine"
+        ]
+      },
+      {
+        "randomized": {
+          "host_has_dlc": "SyntheticDawnStoryPack"
+        },
+        "playable": {
+          "host_has_dlc": "SyntheticDawnStoryPack"
+        },
+        "portraits": [
+          "default_robot"
+        ]
+      }
+    ],
+    "graphical_culture": "mammalian_01",
+    "move_pop_sound_effect": "robot_pops_move",
+    "resources": []
+  },
+  "MAM": {
+    "archetype": "BIOLOGICAL",
+    "possible": {
+      "authority": {
+        "NOT": {
+          "value": "auth_machine_intelligence",
+          "text": "SPECIES_CLASS_MUST_NOT_USE_MACHINE_INTELLIGENCE"
+        }
+      }
+    },
+    "portraits": [
+      "mam5",
+      "mam13",
+      "mam10",
+      "mam14",
+      "mam4",
+      "mam9",
+      "mam11",
+      "mam6",
+      "mam3",
+      "mam12",
+      "mam7",
+      "mam15",
+      "mam2",
+      "mam8",
+      "mam1",
+      "mam16",
+      "mam_rat"
+    ],
+    "custom_portraits": {
+      "randomized": {
+        "OR": {
+          "host_has_dlc": [
+            "CreaturesoftheVoidPortraitPack",
+            "AnniversaryPortraits"
+          ]
+        }
+      },
+      "playable": {
+        "OR": {
+          "local_has_dlc": [
+            "CreaturesoftheVoidPortraitPack",
+            "AnniversaryPortraits"
+          ]
+        }
+      },
+      "portraits": [
+        "mam17"
+      ]
+    },
+    "non_randomized_portraits": [
+      "mam_rat"
+    ],
+    "graphical_culture": "mammalian_01",
+    "move_pop_sound_effect": "moving_pop_confirmation",
+    "resources": []
+  },
+  "REP": {
+    "archetype": "BIOLOGICAL",
+    "possible": {
+      "authority": {
+        "NOT": {
+          "value": "auth_machine_intelligence",
+          "text": "SPECIES_CLASS_MUST_NOT_USE_MACHINE_INTELLIGENCE"
+        }
+      }
+    },
+    "portraits": [
+      "rep2",
+      "rep10",
+      "rep14",
+      "rep3",
+      "rep7",
+      "rep12",
+      "rep9",
+      "rep11",
+      "rep6",
+      "rep13",
+      "rep1",
+      "rep8",
+      "rep4",
+      "rep15",
+      "rep5"
+    ],
+    "custom_portraits": [
+      {
+        "randomized": {
+          "host_has_dlc": "LeviathansStoryPack"
+        },
+        "playable": {
+          "local_has_dlc": "LeviathansStoryPack"
+        },
+        "portraits": [
+          "rep16"
+        ]
+      },
+      {
+        "randomized": {
+          "host_has_dlc": "AnniversaryPortraits"
+        },
+        "playable": {
+          "local_has_dlc": "AnniversaryPortraits"
+        },
+        "portraits": [
+          "rep17"
+        ]
+      }
+    ],
+    "graphical_culture": "reptilian_01",
+    "move_pop_sound_effect": "reptilian_pops_move",
+    "resources": []
+  },
+  "AVI": {
+    "archetype": "BIOLOGICAL",
+    "possible": {
+      "authority": {
+        "NOT": {
+          "value": "auth_machine_intelligence",
+          "text": "SPECIES_CLASS_MUST_NOT_USE_MACHINE_INTELLIGENCE"
+        }
+      }
+    },
+    "portraits": [
+      "avi1",
+      "avi8",
+      "avi13",
+      "avi10",
+      "avi15",
+      "avi4",
+      "avi7",
+      "avi5",
+      "avi9",
+      "avi6",
+      "avi11",
+      "avi3",
+      "avi14",
+      "avi2",
+      "avi12"
+    ],
+    "custom_portraits": [
+      {
+        "playable": {
+          "logged_in_to_pdx_account": true
+        },
+        "portraits": [
+          "avi16"
+        ]
+      },
+      {
+        "randomized": {
+          "OR": {
+            "host_has_dlc": [
+              "CreaturesoftheVoidPortraitPack",
+              "AnniversaryPortraits"
+            ]
+          }
+        },
+        "playable": {
+          "OR": {
+            "local_has_dlc": [
+              "CreaturesoftheVoidPortraitPack",
+              "AnniversaryPortraits"
+            ]
+          }
+        },
+        "portraits": [
+          "avi17"
+        ]
+      },
+      {
+        "randomized": {
+          "host_has_dlc": "AnniversaryPortraits"
+        },
+        "playable": {
+          "local_has_dlc": "AnniversaryPortraits"
+        },
+        "portraits": [
+          "avi18"
+        ]
+      }
+    ],
+    "graphical_culture": "avian_01",
+    "move_pop_sound_effect": "avian_pops_move",
+    "resources": []
+  },
+  "ART": {
+    "archetype": "BIOLOGICAL",
+    "possible": {
+      "authority": {
+        "NOT": {
+          "value": "auth_machine_intelligence",
+          "text": "SPECIES_CLASS_MUST_NOT_USE_MACHINE_INTELLIGENCE"
+        }
+      }
+    },
+    "portraits": [
+      "art14",
+      "art7",
+      "art12",
+      "art6",
+      "art1",
+      "art13",
+      "art8",
+      "art3",
+      "art5",
+      "art9",
+      "art10",
+      "art11",
+      "art15",
+      "art19"
+    ],
+    "custom_portraits": [
+      {
+        "randomized": {
+          "host_has_dlc": "LeviathansStoryPack"
+        },
+        "playable": {
+          "local_has_dlc": "LeviathansStoryPack"
+        },
+        "portraits": [
+          "art18"
+        ]
+      },
+      {
+        "randomized": {
+          "host_has_dlc": "ArachnoidPortraitPack"
+        },
+        "playable": {
+          "local_has_dlc": "ArachnoidPortraitPack"
+        },
+        "portraits": [
+          "art16"
+        ]
+      },
+      {
+        "randomized": {
+          "host_has_dlc": "AnniversaryPortraits"
+        },
+        "playable": {
+          "local_has_dlc": "AnniversaryPortraits"
+        },
+        "portraits": [
+          "art20"
+        ]
+      },
+      {
+        "randomized": {
+          "OR": {
+            "host_has_dlc": [
+              "CreaturesoftheVoidPortraitPack",
+              "AnniversaryPortraits"
+            ]
+          }
+        },
+        "playable": {
+          "OR": {
+            "local_has_dlc": [
+              "CreaturesoftheVoidPortraitPack",
+              "AnniversaryPortraits"
+            ]
+          }
+        },
+        "portraits": [
+          "art17"
+        ]
+      }
+    ],
+    "graphical_culture": "arthropoid_01",
+    "move_pop_sound_effect": "arthopoid_pops_move",
+    "resources": []
+  },
+  "MOL": {
+    "archetype": "BIOLOGICAL",
+    "possible": {
+      "authority": {
+        "NOT": {
+          "value": "auth_machine_intelligence",
+          "text": "SPECIES_CLASS_MUST_NOT_USE_MACHINE_INTELLIGENCE"
+        }
+      }
+    },
+    "portraits": [
+      "mol3",
+      "mol7",
+      "mol13",
+      "mol2",
+      "mol14",
+      "mol4",
+      "mol8",
+      "mol1",
+      "mol11",
+      "mol12",
+      "mol5",
+      "mol6",
+      "mol15"
+    ],
+    "custom_portraits": [
+      {
+        "randomized": {
+          "OR": {
+            "host_has_dlc": [
+              "CreaturesoftheVoidPortraitPack",
+              "AnniversaryPortraits"
+            ]
+          }
+        },
+        "playable": {
+          "OR": {
+            "local_has_dlc": [
+              "CreaturesoftheVoidPortraitPack",
+              "AnniversaryPortraits"
+            ]
+          }
+        },
+        "portraits": [
+          "mol16"
+        ]
+      },
+      {
+        "randomized": {
+          "host_has_dlc": "LeviathansStoryPack"
+        },
+        "playable": {
+          "local_has_dlc": "LeviathansStoryPack"
+        },
+        "portraits": [
+          "mol17",
+          "mol18"
+        ]
+      }
+    ],
+    "graphical_culture": "molluscoid_01",
+    "move_pop_sound_effect": "molluscoid_pops_move"
+  },
+  "FUN": {
+    "archetype": "BIOLOGICAL",
+    "possible": {
+      "authority": {
+        "NOT": {
+          "value": "auth_machine_intelligence",
+          "text": "SPECIES_CLASS_MUST_NOT_USE_MACHINE_INTELLIGENCE"
+        }
+      }
+    },
+    "gender": false,
+    "portraits": [
+      "fun2",
+      "fun4",
+      "fun3",
+      "fun13",
+      "fun12",
+      "fun6",
+      "fun15",
+      "fun7",
+      "fun1",
+      "fun9",
+      "fun11",
+      "fun8",
+      "fun14",
+      "fun10"
+    ],
+    "custom_portraits": [
+      {
+        "randomized": {
+          "OR": {
+            "host_has_dlc": [
+              "CreaturesoftheVoidPortraitPack",
+              "AnniversaryPortraits"
+            ]
+          }
+        },
+        "playable": {
+          "OR": {
+            "local_has_dlc": [
+              "CreaturesoftheVoidPortraitPack",
+              "AnniversaryPortraits"
+            ]
+          }
+        },
+        "portraits": [
+          "fun16"
+        ]
+      },
+      {
+        "randomized": {
+          "host_has_dlc": "LeviathansStoryPack"
+        },
+        "playable": {
+          "local_has_dlc": "LeviathansStoryPack"
+        },
+        "portraits": [
+          "fun17"
+        ]
+      }
+    ],
+    "graphical_culture": "fungoid_01",
+    "move_pop_sound_effect": "fungoid_pops_move",
+    "resources": []
+  },
+  "PLANT": {
+    "archetype": "BIOLOGICAL",
+    "possible": {
+      "authority": {
+        "NOT": {
+          "value": "auth_machine_intelligence",
+          "text": "SPECIES_CLASS_MUST_NOT_USE_MACHINE_INTELLIGENCE"
+        }
+      }
+    },
+    "playable": {
+      "OR": {
+        "local_has_dlc": [
+          "Plantoid",
+          "AncientRelicsStoryPack"
+        ]
+      }
+    },
+    "gender": false,
+    "custom_portraits": [
+      {
+        "randomized": {
+          "host_has_dlc": "Plantoid"
+        },
+        "playable": {
+          "local_has_dlc": "Plantoid"
+        },
+        "portraits": [
+          "pla2",
+          "pla6",
+          "pla1",
+          "pla11",
+          "pla3",
+          "pla13",
+          "pla7",
+          "pla15",
+          "pla10",
+          "pla5",
+          "pla9",
+          "pla14",
+          "pla4",
+          "pla8",
+          "pla12"
+        ]
+      },
+      {
+        "randomized": {
+          "host_has_dlc": "AncientRelicsStoryPack"
+        },
+        "playable": {
+          "local_has_dlc": "AncientRelicsStoryPack"
+        },
+        "portraits": [
+          "pla16_baol"
+        ]
+      }
+    ],
+    "graphical_culture": "plantoid_01",
+    "resources": []
+  },
+  "LITHOID": {
+    "archetype": "LITHOID",
+    "playable": {
+      "has_lithoids": true
+    },
+    "possible": {
+      "authority": {
+        "NOT": {
+          "value": "auth_machine_intelligence",
+          "text": "SPECIES_CLASS_MUST_NOT_USE_MACHINE_INTELLIGENCE"
+        }
+      }
+    },
+    "randomized": {
+      "has_lithoids": true
+    },
+    "gender": false,
+    "custom_portraits": {
+      "randomized": {
+        "has_lithoids": true
+      },
+      "playable": {
+        "has_lithoids": true
+      },
+      "portraits": [
+        "lith1",
+        "lith2",
+        "lith3",
+        "lith4",
+        "lith5",
+        "lith6",
+        "lith7",
+        "lith8",
+        "lith9",
+        "lith10",
+        "lith11",
+        "lith12",
+        "lith13",
+        "lith14",
+        "lith15"
+      ]
+    },
+    "graphical_culture": "lithoid_01",
+    "move_pop_sound_effect": "reptilian_pops_move",
+    "resources": [],
+    "trait": "trait_lithoid"
+  },
+  "NECROID": {
+    "archetype": "BIOLOGICAL",
+    "playable": {
+      "has_necroids": true
+    },
+    "possible": {
+      "authority": {
+        "NOT": {
+          "value": "auth_machine_intelligence",
+          "text": "SPECIES_CLASS_MUST_NOT_USE_MACHINE_INTELLIGENCE"
+        }
+      }
+    },
+    "randomized": {
+      "has_necroids": true
+    },
+    "gender": true,
+    "custom_portraits": {
+      "randomized": {
+        "has_necroids": true
+      },
+      "playable": {
+        "has_necroids": true
+      },
+      "portraits": [
+        "nec1",
+        "nec2",
+        "nec3",
+        "nec4",
+        "nec5",
+        "nec6",
+        "nec7",
+        "nec8",
+        "nec9",
+        "nec10",
+        "nec11",
+        "nec12",
+        "nec13",
+        "nec14",
+        "nec15"
+      ]
+    },
+    "graphical_culture": "necroid_01",
+    "move_pop_sound_effect": "molluscoid_pops_move",
+    "resources": []
+  }
+}

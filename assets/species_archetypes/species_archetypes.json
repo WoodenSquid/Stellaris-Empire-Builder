@@ -1,0 +1,22 @@
+{
+  "BIOLOGICAL": {
+    "species_trait_points": 2,
+    "species_max_traits": 5
+  },
+  "ROBOT": {
+    "species_trait_points": 0,
+    "species_max_traits": 4
+  },
+  "MACHINE": {
+    "species_trait_points": 1,
+    "species_max_traits": 5
+  },
+  "PRESAPIENT": {
+    "species_trait_points": 2,
+    "species_max_traits": 5
+  },
+  "LITHOID": {
+    "inherit_trait_points_from": "BIOLOGICAL"
+  },
+  "OTHER": []
+}

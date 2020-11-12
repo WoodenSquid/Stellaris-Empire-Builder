@@ -1,0 +1,31 @@
+body {
+    font-family: helvetica;
+}
+
+ul {
+    font-family: monospace;
+}
+
+.ui-all {
+    display: inline-block;
+}
+
+input {
+    vertical-align: -2px;
+}
+
+input[type="checkbox"] {
+    width: 24px;
+    height: 24px;
+    vertical-align: bottom;
+    margin-right:10px;
+}
+label.checkbox {
+    vertical-align: top;
+    line-height: 24px;
+    margin: 2px 0;
+    display: block;
+    height: 24px;
+    margin-right:100px;
+}
+.selected {background: coral;}
