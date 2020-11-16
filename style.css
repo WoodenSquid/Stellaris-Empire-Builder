@@ -10,17 +10,19 @@ body {
 }
 
 h1, h2 {
-    font-family: 'Faster One', cursive;
+    font-family: 'Press Start 2P', cursive;
 }
 
 /* header styles */
 
 h1 {
+    font-family: 'Orbitron', sans-serif;
     font-size: 4rem;
     text-align: center;
 }
 h3{
-    font-family: 'Orbitron', sans-serif;
+    font-family: 'Press Start 2P', cursive;
+
 
 }
 

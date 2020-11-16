@@ -27,9 +27,6 @@ const jsonF = {
 };
 
 
-
-
-
 combinedRequest = {
 
     init: function(urlArray, callback) {
@@ -78,7 +75,6 @@ combinedRequest = {
         //theContent += responseText;
         theContent.push(responseText);
         /*The basic operation we want to do, adding what we got from the asynchronous call to our theContent variable*/
-        //console.log(responseText);
         urlArray.shift();
         /*since we've gotten this far, we must have finished with the loading of the URL in the position urlArray[0], which we set the XMLHttpRequest object to fetch from in requestWrapper. So we remove it from the array.*/
         if (urlArray.length > 0) {
@@ -98,62 +94,24 @@ combinedRequest = {
     }
 
 }
-/*
-let cat = [species, authority, civics];
-for(let a = 0; a < 3; a++) {
-    combinedRequest.init([cat[a]], function (data) {
-        populateHead();
-    testEth(data[0]);
-
-    });
-}*/
 
 combinedRequest.init([jsonF.species.url, jsonF.archetype.url, jsonF.governments.url, jsonF.ethics.url, jsonF.authority.url, jsonF.civics.url], function(data){
     populateHeader();
-    const copy = Object.assign({}, combinedArticles.init(data[5]));
-    console.log(copy)
-    combinedArticles.init(data[0]);
-    combinedArticles.init(data[3]);
-    combinedArticles.init(data[4]);
+    const civ = Object.assign({}, combinedArticles.init(data[5]));
+    //console.log(copy)
+    const spec = combinedArticles.init(data[0]);
+    //combinedArticles.init(data[3]);
+    const auth = combinedArticles.init(data[4]);
     //combinedArticles.init(data[5]);
     //showCategories(data[4]);
-    showCat(data[0], 0);
-    //showCat(data[3], 3);
-    showCat(data[4], 4);
-    showCat(copy, 5);
-    //testEth(data[3], 3);
-    //console.log("test");
-    //console.log(me);
-    //console.log(me2);
+    console.log(combinedArticles.init(data[3]))
+    showCat(spec, 0);
+    showCat(combinedArticles.init(data[3]), 3);
+    showCat(auth, 4);
+    showCat(civ, 5);
+    //testEth(combinedArticles.init(data[3]), 3);
 
 });
-
-
-
-
-
-function getJson(file){
-    // Use it:
-    var obj
-    /*
-    combinedRequest.init([file], function(data){
-        //console.log(file);
-        //console.log(data[0]);
-        obj = JSON.parse(JSON.stringify(data[0]));
-        //saveJson(data[3]);
-        //console.log("from file");
-        //console.log(obj);
-        if(nut === 1){
-            saveJson(obj);
-        }
-
-    });
-    //console.log(obj);
-    return obj;
-    //console.log(num);
-
-     */
-}
 
 function saveJson(obj) {
     const obj3 = JSON.parse(JSON.stringify(obj));
@@ -161,32 +119,4 @@ function saveJson(obj) {
     //console.log(obj);
     return obj3;
 }
-//console.log("test2");
-//console.log(obj3);
 
-
-
-/*
-function saveJson(file) {
-    //import the standard filesystem module to read/write files and folders
-    const fs = require("fs");
-
-    //after you modify your data use this to save the changes
-    fs.writeFile("assets/Constants/Ethics/EthicModifiers.json", JSON.stringify(file), err => {
-        if(err) console.log(err);
-    });
-}
-
- */
-/*
-function downloadObjectAsJson(exportObj, exportName){
-    var dataStr = "data:text/json;charset=utf-8," + encodeURIComponent(JSON.stringify(exportObj));
-    var downloadAnchorNode = document.createElement('a');
-    downloadAnchorNode.setAttribute("href",     dataStr);
-    downloadAnchorNode.setAttribute("download", exportName + ".json");
-    document.body.appendChild(downloadAnchorNode); // required for firefox
-    downloadAnchorNode.click();
-    downloadAnchorNode.remove();
-}
-
- */
